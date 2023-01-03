@@ -1,4 +1,6 @@
-<x-app-layout :success-message="$successMessage">
+<x-app-layout>
+    <x-message-success :success-message="$successMessage"/>
+
     <a href="{{ route('seasons.index', $season->series->id) }}" class="btn btn-outline-info mb-2">back</a>
 
     <form method="post">

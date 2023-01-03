@@ -33,11 +33,6 @@
             <!-- Page Content -->
             <main>
                 <div class="container mt-5">
-                    @isset($successMessage)
-                        <div class="alert alert-success">
-                            {{ $successMessage }}
-                        </div>
-                    @endisset
 
                     @if ($errors->any())
                         <ul class="list-group">

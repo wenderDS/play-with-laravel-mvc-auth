@@ -1,4 +1,6 @@
-<x-app-layout :success-message="$successMessage">
+<x-app-layout>
+    <x-message-success :success-message="$successMessage"/>
+
     @auth
         <a href="{{ route('series.create') }}" class="btn btn-dark mb-2">New</a>
     @endauth
