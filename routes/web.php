@@ -21,6 +21,10 @@ use Illuminate\Support\Facades\Route;
 //    return view('dashboard');
 //})->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/email', function () {
+    return new \App\Mail\SeriesCreated('Loki',1, 2, 12);
+});
+
 Route::get('/', function () {
     return to_route('series.index');
 });
